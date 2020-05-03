@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<!--here i placed our styling links that were given to us by school :) thanks btw. -->  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+   integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <!-- our main display is with the jumbotron-->
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+  <!-- here we import the time from our scipt js and have it place in the currenday id-->  
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <!-- the container is going to hold all our content-->
+  <div class="container">
+  <!-- i used individual rows for each hour on the planner -->  
+    <div class="row">
+  <!--i used columns to place the timeblock in -->    
+      <div class="col-2 hour time-block">9:00 am</div>
+  <!--i gave each row a textarea where the user can input a reminder, gave it a placeholder and col 8 with an id to get in js-->    
+      <textarea id="9" placeholder="Enter memo HERE" class="col-8  input" ></textarea>
+  <!-- i added the button at the end of the row using up 2 columns to complete 12. timeclock has 2col textarea has 8col -->    
+      <button class="col-2 saveBtn">SAVE</button>
+    </div>
+  <!-- we repeated the same process 8 times for the remaining rows just making changes to id's and the timeblocks-->
+    <div class="row">
+      <div class="col-2 hour time-block">10:00 am</div>
+      <textarea id="10" placeholder="Enter memo HERE" class="col-8 input "></textarea>
+      <button class="col-2 saveBtn">SAVE</button>
+    </div>
+    <div class="row">
+      <div class="col-2 hour time-block">11:00 am</div>
+      <textarea id="11" placeholder="Enter memo HERE" class="col-8 input "></textarea>
+      <button class="col-2 saveBtn">SAVE</button>
+    </div>
+    <div class="row">
+      <div class="col-2 hour time-block">12:00 am</div>
+      <textarea id="12" placeholder="Enter memo HERE" class="col-8 input "></textarea>
+      <button class="col-2 saveBtn">SAVE</button>
+    </div>
+    <div class="row">
+      <div class="col-2 hour time-block">1:00 pm</div>
+      <textarea id="13" placeholder="Enter memo HERE" class="col-8 input "></textarea>
+      <button class="col-2 saveBtn">SAVE</button>
+    </div>
+    <div class="row">
+      <div class="col-2 hour time-block">2:00 pm</div>
+      <textarea id="14" placeholder="Enter memo HERE" class="col-8 input "></textarea>
+      <button class="col-2 saveBtn">SAVE</button>
+    </div>
+    <div class="row">
+      <div class="col-2 hour time-block">3:00 pm</div>
+      <textarea id="15" placeholder="Enter memo HERE" class="col-8 input "></textarea>
+      <button class="col-2 saveBtn">SAVE</button>
+    </div>
+    <div class="row">
+      <div class="col-2 hour time-block">4:00 pm</div>
+      <textarea id="16" placeholder="Enter memo HERE" class="col-8 input "></textarea>
+      <button class="col-2 saveBtn">SAVE</button>
+    </div>
+    <div class="row">
+      <div class="col-2 hour time-block">5:00 pm</div>
+      <textarea id="17" placeholder="Enter memo HERE" class="col-8 input "></textarea>
+      <button class="col-2 saveBtn">SAVE</button>
+    </div>
+    <div class="row">
+      <div class="col-2 hour time-block">6:00 pm</div>
+      <textarea id="18" placeholder="Enter memo HERE" class="col-8 input "></textarea>
+      <button class="col-2 saveBtn">SAVE</button>
+    </div>
+  </div>     
+<!--i added the script source below for the functionality of the site-->  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src='script.js'></script>
+</body>
+
+</html>
